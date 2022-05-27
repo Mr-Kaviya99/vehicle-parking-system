@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.oop.controller.AddDriverForm">
+   <children>
+      <JFXTextField fx:id="txtDriverName" labelFloat="true" layoutX="50.0" layoutY="38.0" prefHeight="28.0" prefWidth="550.0" promptText="Drier Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="50.0" layoutY="109.0" prefHeight="28.0" prefWidth="550.0" promptText="NIC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDrivingLicenseNumber" labelFloat="true" layoutX="50.0" layoutY="184.0" prefHeight="28.0" prefWidth="550.0" promptText="Driving Licence Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="txtAddress" labelFloat="true" layoutX="50.0" layoutY="252.0" prefHeight="70.0" prefWidth="550.0" promptText="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="50.0" layoutY="350.0" prefHeight="28.0" prefWidth="550.0" promptText="Contact Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="450.0" layoutY="416.0" onAction="#saveDriverOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-border-color: green;" text="Save Drver">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

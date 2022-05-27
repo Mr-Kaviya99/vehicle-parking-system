@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #c8c9bf;"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="lk.ijse.oop.controller.ParkingSystem">
+    <children>
+        <Label layoutX="57.0" layoutY="109.0" prefHeight="33.0" prefWidth="175.0" text="Select Vehicle"/>
+        <Label layoutX="57.0" layoutY="226.0" minWidth="50.0" prefHeight="33.0" prefWidth="175.0" text="Vehicle Type"/>
+        <Label layoutX="57.0" layoutY="343.0" minWidth="50.0" prefHeight="33.0" prefWidth="175.0" text="Driver"/>
+        <JFXComboBox fx:id="cmbVehicle" layoutX="232.0" layoutY="109.0" prefHeight="33.0" prefWidth="300.0"/>
+        <JFXComboBox fx:id="cmbDriver" layoutX="232.0" layoutY="343.0" prefHeight="33.0" prefWidth="300.0"/>
+        <Label alignment="CENTER" layoutX="232.0" layoutY="232.0" prefHeight="33.0" prefWidth="300.0"
+               text="Vehicle Type">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Label layoutX="57.0" layoutY="435.0" prefHeight="322.0" prefWidth="409.0"
+               style="-fx-background-color: #919484;" textFill="#ffffffcd"/>
+        <Label alignment="CENTER" layoutX="57.0" layoutY="435.0" prefHeight="80.0" prefWidth="400.0"
+               text="Your Parking Slot Number" textAlignment="CENTER" textFill="#000000cc">
+            <font>
+                <Font name="System Bold" size="27.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblParkingSlotNumb" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="515.0"
+               prefHeight="237.0" prefWidth="400.0" text="13" textAlignment="CENTER" textFill="#000000cc">
+            <font>
+                <Font size="96.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblDateTime" layoutX="600.0" layoutY="89.0" prefHeight="73.0" prefWidth="523.0" text="Time"/>
+        <JFXButton layoutX="600.0" layoutY="187.0" onAction="#btnParkVehicleOnAction" prefHeight="75.0"
+                   prefWidth="525.0" style="-fx-background-color: #919484;" text="Park Vehicle" textFill="#000000cc">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="600.0" layoutY="322.0" onAction="#OnDeliverySwiftOnAction" prefHeight="75.0"
+                   prefWidth="525.0" style="-fx-background-color: #919484;" text="On Delivery Swift"
+                   textFill="#000000cc">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="599.0" layoutY="559.0" onAction="#ManagementLoginOnAction" prefHeight="75.0"
+                   prefWidth="525.0" style="-fx-background-color: white;" text="Management Log In" textFill="#000000cc">
+            <font>
+                <Font name="System Italic" size="23.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
